@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  getAllPosts() {
+    console.log('this button is working fine!');
+  }
 }
