@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { HttpService } from './services/http.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +10,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
+  postsResponse: any;
+  constructor(private httpService: HttpService) {
+
+  }
   getAllPosts() {
-    console.log('this button is working fine!');
+    this.httpService.makeRequest('posts', 'Get').subscribe(
+      (res: any) => {
+        this.postsResponse = res;
+      },
+      (error: any) => {
+        console.log(error);
+    });
   }
 }

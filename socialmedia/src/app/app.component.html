@@ -5,10 +5,10 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="raw">
+<div class="container" *ngIf="postsResponse">
+    <div class="raw" *ngFor="let post of postsResponse">
         <div class="mx-auto col-6">
-            <app-posts></app-posts>
+            <app-posts *ngIf="postsResponse" [postInfo]="post"></app-posts>
         </div>
     </div>
 </div>
