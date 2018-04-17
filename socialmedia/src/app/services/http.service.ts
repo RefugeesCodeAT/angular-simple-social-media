@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class HttpService {
+  private url: string = environment.backendUrl;
 
   constructor(private http: HttpClient) { }
 
-  makeRequest(page: string, type: string, data: any) {
+  makeRequest(page: string, type: string, data: any = null) {
     let headers: HttpHeaders = new HttpHeaders(), requestOption;
 
     headers = headers.set('Accept', 'application/json');
@@ -23,7 +25,8 @@ export class HttpService {
         responseType: 'json'
       };
     }
-    return this.http.request(type, page, requestOption);
+    console.log(this.url + page);
+    return this.http.request(type, this.url + page, requestOption);
   }
 
 }
