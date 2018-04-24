@@ -26,3 +26,39 @@ this is a simple social media as a front-end using Angular framework.
 	- test
 - Bind data with the view
 	- design your logic in the view (html in the root)
+
+---
+
+Social-Media-part-2
+
+- Creating routing as test
+	- Create routing module using "ng g m routes --routing"
+	- Correct some lines.
+	- Bind the routing with the main app.module.ts
+	- Create components as pages.
+	- Bind components that act like pages with routing 
+	- Test the project was not successful.
+	- Fixing the main app.component.html
+	- Add default page as error if there is no route with the same path
+
+- Redesigning the pages
+	- Navbar component
+		- Cereate navbar as component
+		- Do the styling of navbar
+		- Add routerLink as links for the pages of our app.
+	- Create about us page
+		- Create aboutus as page
+		- Do the styling
+		- Bind the component with routing so it acts like a page
+		- Go to the navbar and change the routerLink to the correct link as routing path
+	- Create all posts page
+		- Create allposts page.
+		- Styling for allpost page.
+		- Bind allposts page with routing module.
+		- Bind the link of allposts to the navbar.
+		- Implement http request
+		- Reduce the info inside all post
+		- create another component called postindetails as page
+		- Bind it with routing.
+		- Add shared serivce between components.
+		- implement the sharing logic.

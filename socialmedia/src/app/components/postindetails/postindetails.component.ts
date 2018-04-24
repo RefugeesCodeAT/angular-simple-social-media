@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DatashareService } from '../../services/datashare.service';
+
 @Component({
   selector: 'app-postindetails',
   templateUrl: './postindetails.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostindetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ds: DatashareService) { }
 
   ngOnInit() {
   }

@@ -1,4 +1,7 @@
 import { Component, OnInit, Input} from '@angular/core';
+import { Router } from '@angular/router';
+
+import { DatashareService } from '../../services/datashare.service';
 
 @Component({
   selector: 'app-posts',
@@ -7,9 +10,13 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class PostsComponent implements OnInit {
   @Input() postInfo: any;
-  constructor() { }
+  constructor(private ds: DatashareService, private route: Router) { }
 
   ngOnInit() {
   }
 
+  showmePostIndetails() {
+    this.ds.post = this.postInfo;
+    this.route.navigate(['post']);
+  }
 }

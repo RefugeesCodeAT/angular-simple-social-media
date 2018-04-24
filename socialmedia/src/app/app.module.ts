@@ -8,6 +8,7 @@ import { PostsComponent } from './components/posts/posts.component';
 
 // service
 import { HttpService } from './services/http.service';
+import { DatashareService } from './services/datashare.service';
 
 // Modules
 import { RoutesModule } from './routes/routes.module';
@@ -32,7 +33,7 @@ import { PostindetailsComponent } from './components/postindetails/postindetails
     HttpClientModule,
     RoutesModule
   ],
-  providers: [HttpService],
+  providers: [HttpService, DatashareService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
