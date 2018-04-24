@@ -29,6 +29,16 @@ html, body {
     padding: 15px;
     display: inline-block;
 }
+.col-8 {
+    width:66.66666%;
+    padding: 15px;
+    display: inline-block;
+}
+.col-4 {
+    width: 33.33333%;
+    padding: 15px;
+    display: inline-block;
+}
 
 .mx-auto {
     margin: 0 auto;

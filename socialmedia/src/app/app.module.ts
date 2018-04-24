@@ -13,13 +13,17 @@ import { HttpService } from './services/http.service';
 import { RoutesModule } from './routes/routes.module';
 import { Error404Component } from './components/error404/error404.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { AllpostsComponent } from './components/allposts/allposts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     Error404Component,
-    NavbarComponent
+    NavbarComponent,
+    AboutusComponent,
+    AllpostsComponent
   ],
   imports: [
     BrowserModule,
