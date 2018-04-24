@@ -7,7 +7,14 @@ html, body {
     height: 100%;
 }
 
-.raw {
+.bg-gray {
+    background: lightgray;
+}
+.bg-blue {
+    background: lightblue;
+}
+
+.row {
     width: 100%;
     display: table;
 }
@@ -15,12 +22,12 @@ html, body {
 .col-12 {
     width: 100%;
     padding: 15px;
-    display: table;
+    display: inline-block;
 }
 .col-6 {
     width:50%;
     padding: 15px;
-    display: table;
+    display: inline-block;
 }
 
 .mx-auto {
@@ -36,4 +43,10 @@ html, body {
 }
 .text-center {
     text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
 }

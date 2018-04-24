@@ -11,19 +11,15 @@ import { HttpService } from './services/http.service';
 
 // Modules
 import { RoutesModule } from './routes/routes.module';
-import { Page1Component } from './components/page1/page1.component';
-import { Page2Component } from './components/page2/page2.component';
-import { Page3Component } from './components/page3/page3.component';
 import { Error404Component } from './components/error404/error404.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    Page1Component,
-    Page2Component,
-    Page3Component,
-    Error404Component
+    Error404Component,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
