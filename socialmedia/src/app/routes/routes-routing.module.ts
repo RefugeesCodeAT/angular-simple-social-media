@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)], // 1- This forChild should be forRoot
+  imports: [RouterModule.forRoot(routes)], // 1- This forChild should be forRoot
   exports: [RouterModule]
 })
 export class RoutesRoutingModule { }
