@@ -1,14 +1,1 @@
-<div class="container">
-    <div class="raw">
-        <div class="mx-auto col-6 text-center">
-            <button type="button" class="load-posts d-inline-block" (click)="getAllPosts()">Get posts</button>
-        </div>
-    </div>
-</div>
-<div class="container" *ngIf="postsResponse">
-    <div class="raw" *ngFor="let post of postsResponse">
-        <div class="mx-auto col-6">
-            <app-posts *ngIf="postsResponse" [postInfo]="post"></app-posts>
-        </div>
-    </div>
-</div>
+<router-outlet></router-outlet>
