@@ -4,9 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 // Components
 import { Error404Component } from '../components/error404/error404.component';
 import { AboutusComponent } from '../components/aboutus/aboutus.component';
+import { AllpostsComponent } from '../components/allposts/allposts.component';
 
 // TODO define your components as pages
 const routes: Routes = [
+  {path: 'allposts', component: AllpostsComponent},
   {path: 'aboutus', component: AboutusComponent},
   {path: '**', component: Error404Component}
 ];
