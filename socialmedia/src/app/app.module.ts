@@ -15,6 +15,7 @@ import { Error404Component } from './components/error404/error404.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { AllpostsComponent } from './components/allposts/allposts.component';
+import { PostindetailsComponent } from './components/postindetails/postindetails.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AllpostsComponent } from './components/allposts/allposts.component';
     Error404Component,
     NavbarComponent,
     AboutusComponent,
-    AllpostsComponent
+    AllpostsComponent,
+    PostindetailsComponent
   ],
   imports: [
     BrowserModule,
